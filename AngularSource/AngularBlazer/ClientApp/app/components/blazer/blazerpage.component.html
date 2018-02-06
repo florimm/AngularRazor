@@ -1,0 +1,19 @@
+<h1>Test</h1>
+<razor-host (closeItem)="onCloseItem($event)">
+    <razor-item [default]="true" title="Test1">
+        <h1>1</h1>
+        <button (click)="toggleTest2()">Inside click</button>
+    </razor-item>
+    <razor-item [visible]="visibleTest2" title="Test2">
+        <ng-template>
+            <h1>{{ daaa }}</h1>
+            <razor-test></razor-test>
+        </ng-template>
+    </razor-item>
+    <razor-item  title="Test3">
+        <h1>3</h1>
+    </razor-item>
+    <razor-item  title="Test4">
+        <h1>4</h1>
+    </razor-item>
+</razor-host>
